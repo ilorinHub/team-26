@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-img {
+  @apply w-fit h-full;
+}
+/* 
+body,html{
+  height: 100%;
+} */
+input,
+button,
+textarea {
+  outline: none;
+}
+
+.contact-form form .flex .input input,
+.contact-form form textarea {
+  background: #ffffff;
+  border: 2px solid #5fbf91;
+  width: 100%;
+}
+.contact-form form .flex .input input {
+  padding: 9px 20px;
+}
+
+.contact-form form .flex .input input::placeholder {
+  color: #a9a9a9;
+  font-size: 16px;
+}
+
+.auth .btn a {
+  padding: 6px 16px;
+  border: 2px solid #2aa96d;
+  text-align: center;
+}
+
+.register-form .form form input {
+  margin: 5px 0;
+  padding: 5px 16px;
+  background: #ffffff;
+  border: 2px solid #5fbf91;
+  width: 100%;
+}
+
+.register-form .form form label {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.select-input input {
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px 22px;
+}
+
+.select-input label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.teacher .teacher-list:not(:last-child) {
+  border-bottom: 0.5px solid #7e7b7b;
+}
+
+.leave-request .input {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.leave-request .input input {
+  border: 1px solid #000000;
+  padding: 9px 17px;
+}
