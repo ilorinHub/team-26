@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
-import { Link, Navigate } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 function TeacherLogin() {
   const [username, setUserName] = useState("");
   const [password, setpassword] = useState("");
-  const navigate = Navigate();
+  const navigate = useNavigate();
 
-  const { signin } = useContext(AuthContext);
+  const { signin,authSuccess,setAuthSuccess } = useContext(AuthContext);
 
   const handleLogin = (event) => {
     event.preventDefault();

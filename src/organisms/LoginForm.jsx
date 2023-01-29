@@ -7,6 +7,7 @@ import Logo from "../assets/Logo 1.png";
 import { Link } from "react-router-dom";
 
 function LoginForm() {
+
   const [loginAs, setLoginAs] = useState("");
   const [form, setForm] = useState("");
 
@@ -31,7 +32,9 @@ function LoginForm() {
             </p>
           </div>
 
-          <div className={!form ? "block" : "hidden"}>
+          <div 
+          className={!form ? "block" : "hidden"}
+          >
             <form className="btn flex flex-col gap-3  font-medium text-base md:gap-6">
               <label> Login as...</label>
               <select
@@ -48,7 +51,6 @@ function LoginForm() {
                 <option value="school">School</option>
               </select>
               <div onClick={() => setForm(loginAs)}>
-                {" "}
                 <Button
                   bg="text-white"
                   text="bg-green"
@@ -65,7 +67,9 @@ function LoginForm() {
               “Proceed”.
             </p>
           </div>
-          {form && <TeacherLogin />}
+           {form && 
+          <TeacherLogin />
+          }
         </div>
       </div>
     </section>

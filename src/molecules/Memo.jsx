@@ -13,7 +13,6 @@ function Memo() {
   return (
     <div className="md:flex gap-10"> 
       <Nav/>
-
       <div className="md:pt-16 md:w-[60%] md:max-w-3xl">
         <div className="hidden md:block">
           <input

@@ -22,14 +22,15 @@ export const AuthContextProvider = ({ children }) => {
       const res = await axios.post(`https://huangdi.pythonanywhere.com/api/login/`,data , headers)
       setAuthSuccess(true)
       localStorage.setItem("token" , JSON.stringify(res.data))
-      toast('successfully login in')
+      alert('successfully login in')
     } catch (error) {
       console.log(error)
+      alert('something went wrong please try again')
 
       setAuthSuccess(false)
       setAuthSuccess(false)
-      toast(error.response.data?.username[0])
-      toast(error.response.data?.password[0])
+      // toast(error.response.data?.username[0])
+      // toast(error.response.data?.password[0])
     }
   }
   
@@ -80,7 +81,8 @@ export const AuthContextProvider = ({ children }) => {
       setIsError,
       setAuthSuccess,
       authSuccess,
-      createMessage
+      createMessage,
+
     }}>
       {
         children
