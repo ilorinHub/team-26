@@ -32,7 +32,7 @@ function LandingHero() {
         </h1>
         <Link to="/home">
           <button className="bg-gradient-to-r from-[#452C92] to-[#754DEE] rounded-lg p-4 mt-8 text-white font-bold px-8 mb-4">
-            Try for FREE
+            View Case Study
           </button>
         </Link>
       </div>
